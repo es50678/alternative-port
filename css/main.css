@@ -96,21 +96,108 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* Header */
+header{
+ width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+/* Main-Content */
+
+#main-content {
+  width: 96%;
+  padding: 0 2%;
+  margin: auto;
+}
+
+.hero-area{
+  width: 100%;
+}
+
+.top-story{
+  width: 100%;
+}
+
+.author-title, .story-date{
+  float: left;
+  width: 30%;
+}
+
+.article-by-line{
+  clear: both;
+}
+/* SIDEBAR */
+.sidebar {
+  width: 100%;
+}
+
+.newsletter-signup input{
+  width: 100%;
+  display: block;
+}
+
+.upcoming-upcoming {
+  display: none;
+}
+
+.sidebar-faq{
+  display: none;
+}
+
+/* FEED*/
+.feed{
+  width: 100%;
+  margin: 15px auto;
+}
 
 
+.feed-item{
+  width: 100%;
+  overflow: hidden;
+}
 
+.feed-img{
+  margin: auto;
+  float: left;
+  width: 45%;
+  height: auto;
 
+}
 
+.feed-img img{
+  width: 100%;
 
+}
 
+.feed-item h2{
+  float: right;
+  font-size: 20px;
 
+  margin: 0 auto;
+  width: 50%;
+}
 
+.feed-item p{
+  display: none;
+}
 
+/* Footer */
+footer{
+  width: 100%;
+  margin: auto;
+}
 
+#footer-logo{
+  width: 48%;
+  margin: auto;
+}
 
-
-
-
+#footer-logo img{
+  width: 100%;
+}
 
 
 /* ==========================================================================
@@ -202,18 +289,13 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media screen and (min-width: 768px){
+/* TABLET STYLES HERE */
 }
 
-@media print,
-     (-webkit-min-device-pixel-ratio: 1.25),
-     (min-resolution: 1.25dppx),
-     (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media screen and (min-width: 940px){
+/* DESKTOP STYLES HERE */
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
