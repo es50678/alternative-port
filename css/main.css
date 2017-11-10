@@ -98,7 +98,17 @@ textarea {
    ========================================================================== */
 /* Header */
 header{
- width: 100%;
+  width: 100%;
+}
+
+#logo{
+  margin: auto;
+  width: 80%;
+  padding: 0 10%;
+}
+
+#logo img{
+  width: 100%;
 }
 
 nav {
@@ -118,6 +128,15 @@ nav {
 }
 
 .top-story{
+  width: 100%;
+}
+
+.top-img{
+  width: 100%;
+  margin: auto;
+}
+
+.top-img img{
   width: 100%;
 }
 
@@ -150,7 +169,6 @@ nav {
 /* FEED*/
 .feed{
   width: 100%;
-  margin: 15px auto;
 }
 
 
@@ -175,7 +193,6 @@ nav {
 .feed-item h2{
   float: right;
   font-size: 20px;
-
   margin: 0 auto;
   width: 50%;
 }
