@@ -97,9 +97,70 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /*Global*/
+body, html{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #222;
+}
+
+a{
+  font-weight: bold;
+  color: #23a4cc;
+  text-decoration: none;
+}
+
+p{
+  font-size:1rem;
+  line-height: 1.4rem;
+}
+
+p span{
+
+}
+
+h1, h2, h3, h4 {
+
+}
+
+h1{
+
+}
+
+h2{
+  text-transform: uppercase;
+}
+
+h3{
+
+}
+
+h4{
+
+}
+
+.btn{
+  background-color: #ff1256;
+  border: none;
+  color: #fff;
+  font-weight:bold;
+  text-transform: uppercase;
+  line-height:1.6em;
+  text-align: center;
+  box-shadow: 2px 2px 0px #dadada;
+}
+
+.btn:hover{
+  background-color: #b21;
+}
+
+.sidebar-faq.btn, .sidebar-upcoming.btn {
+
+}
+
 img{
   width: 100%;
 }
+
 
 /* Header */
 .main-header{
@@ -236,8 +297,7 @@ footer{
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   -webkit-clip-path: none;
   clip-path: none;
@@ -269,8 +329,7 @@ footer{
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: " "; /* 1 */
   display: table; /* 2 */
 }
