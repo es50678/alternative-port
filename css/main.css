@@ -96,18 +96,18 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* Header */
-header{
+/*Global*/
+img{
   width: 100%;
 }
 
-#logo{
+/* Header */
+.main-header{
+  width: 100%;
   margin: auto;
-  width: 80%;
-  padding: 0 10%;
 }
 
-#logo img{
+#logo{
   width: 100%;
 }
 
@@ -120,9 +120,8 @@ nav {
 #main-content {
   width: 96%;
   padding: 0 2%;
-  margin: auto;
 }
-
+/* Home and Reviews Page*/
 .hero-area{
   width: 100%;
 }
@@ -136,33 +135,12 @@ nav {
   margin: auto;
 }
 
-.top-img img{
-  width: 100%;
-}
-
-.author-title, .story-date{
-  float: left;
-  width: 30%;
-}
-
-.article-by-line{
-  clear: both;
-}
 /* SIDEBAR */
 .sidebar {
   width: 100%;
 }
 
-.newsletter-signup input{
-  width: 100%;
-  display: block;
-}
-
-.upcoming-upcoming {
-  display: none;
-}
-
-.sidebar-faq{
+.sidebar-upcoming, .sidebar-faq {
   display: none;
 }
 
@@ -171,34 +149,38 @@ nav {
   width: 100%;
 }
 
+.feed-item p{
+  display: none;
+}
 
 .feed-item{
-  width: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
-.feed-img{
-  margin: auto;
+.feed-info{
+  width: 55%;
   float: left;
-  width: 45%;
-  height: auto;
-
-}
-
-.feed-img img{
-  width: 100%;
-
 }
 
 .feed-item h2{
-  float: right;
   font-size: 20px;
   margin: 0 auto;
-  width: 50%;
 }
 
-.feed-item p{
-  display: none;
+.feed-img{
+  float: left;
+  width: 45%;
+  margin: auto;
+}
+
+/*Detailed pages*/
+.author-title, .story-date{
+  float: left;
+  width: 30%;
+}
+
+.article-by-line{
+  clear: both;
 }
 
 /* Footer */
@@ -210,10 +192,6 @@ footer{
 #footer-logo{
   width: 48%;
   margin: auto;
-}
-
-#footer-logo img{
-  width: 100%;
 }
 
 
@@ -306,12 +284,128 @@ footer{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media screen and (min-width: 768px){
-/* TABLET STYLES HERE */
+@media screen and (min-width: 768px){ /* Tablet Styles */
+  /*Header*/
+  .main-header{
+    width:94%;
+  }
+
+  #logo {
+    width: 40%;
+    float:left;
+  }
+  nav {
+    width: 60%;
+    float:right;
+  }
+
+  /*HERO AREA*/
+  .top-story{
+    clear: both;
+  }
+  .top-img{
+    width: 57%;
+    float: left;
+  }
+
+  .top-info {
+    width: 37%;
+    float: left;
+  }
+
+  /*Sidebar*/
+
+  .sidebar{
+    clear: both;
+    float: right;
+    width: 37%;
+  }
+
+  .sidebar-upcoming, .sidebar-faq{
+    display: block;
+  }
+
+  /*Feed*/
+
+  .feed {
+    width: 60%;
+    float: left;
+  }
+
+  .feed-img{
+    width: 30%;
+  }
+
+  /*Footer*/
+  footer{
+    clear: both;
+  }
+  #footer-logo{
+    width: 30%;
+  }
+
+  /*Detail Pages*/
+
+  .det-img{
+    width: 50%;
+  }
+
+  .det-info{
+  width: 50%;
+    float: right;
+  }
+
+  .det-content{
+    clear: both;
+  }
+
+  aside.detail{
+    width: 100%;
+  }
+
+  .detail .newsletter h2{
+    display:inline;
+  }
+  .detail .newsletter input{
+    display:inline;
+  }
 }
 
 @media screen and (min-width: 940px){
 /* DESKTOP STYLES HERE */
+  /*Hero Area*/
+  .top-story{
+    width: 60%;
+    float: left;
+  }
+  .top-img, .top-info{
+    width: 100%;
+  }
+  /*Sidebar*/
+  .sidebar{
+    clear: none;
+  }
+
+  /*feed*/
+
+  .feed{
+    clear: both;
+    width: 100%;
+    float: none;
+  }
+
+  .feed-info{
+    width: 65%;
+
+  }
+  .feed-info p {
+    display: block;
+  }
+
+  /*Detail Pages*/
+  aside.detail{
+    width: 37%;
+  }
 }
 /* ==========================================================================
    Print styles.
