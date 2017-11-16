@@ -180,14 +180,21 @@ nav {
 }
 
 nav ul{
+  margin-top: 0;
   list-style: none;
   text-align: center;
   padding: 0;
 }
 
 nav ul li {
-  border-top: 1px solid darkgray;
+  border-bottom: 2px solid darkgray;
   padding: 15px 0;
+}
+
+nav ul li a{
+  text-transform: uppercase;
+  color: #222222;
+  font-weight: 900;
 }
 
 /* Main-Content */
