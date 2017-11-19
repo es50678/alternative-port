@@ -144,6 +144,7 @@ h3{
   box-shadow: 5px 5px 0px 2px #dadada;
   width: 100%;
   height: 45px;
+  margin-bottom:15px;
 }
 
 .btn:hover{
@@ -217,22 +218,25 @@ nav ul li a{
   font-size: 1.32em;
 }
 
+.sidebar h2, .feed h2{
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
 /* SIDEBAR */
 .sidebar {
   width: 100%;
+  border-bottom: 2px solid darkgray;;
+}
+
+.sidebar .newsletter-signup{
+  padding-bottom: 20px;
 }
 
 .sidebar input:first-of-type{
   color: black;
   background-color: white;
   box-shadow: inset 0 0 0px 3px #dadada;
-  margin-bottom:15px;
-
-}
-
-.sidebar h2{
-  font-size: 1.2em;
-  text-transform: capitalize;
 }
 
 .sidebar-upcoming, .sidebar-faq {
@@ -242,6 +246,7 @@ nav ul li a{
 /* FEED*/
 .feed{
   width: 100%;
+  margin: 1em auto;
 }
 
 .feed-item p{
@@ -250,6 +255,10 @@ nav ul li a{
 
 .feed-item{
   overflow: auto;
+}
+
+.feed-item{
+  border-bottom: 2px solid darkgray;
 }
 
 .feed-info{
