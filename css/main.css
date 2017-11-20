@@ -141,7 +141,7 @@ h3{
   text-transform: uppercase;
   line-height:1.6em;
   text-align: center;
-  box-shadow: 5px 5px 0px 2px #dadada;
+  box-shadow: 3px 3px 0px 2px #dadada;
   width: 100%;
   height: 45px;
   margin-bottom:15px;
@@ -218,10 +218,7 @@ nav ul li a{
   font-size: 1.32em;
 }
 
-.sidebar h2, .feed h2{
-  font-size: 1.2em;
-  text-transform: capitalize;
-}
+
 
 /* SIDEBAR */
 .sidebar {
@@ -231,6 +228,11 @@ nav ul li a{
 
 .sidebar .newsletter-signup{
   padding-bottom: 20px;
+}
+
+.sidebar h2, .feed h2{
+  font-size: 1.2em;
+  text-transform: capitalize;
 }
 
 .sidebar input:first-of-type{
@@ -248,17 +250,25 @@ nav ul li a{
   width: 100%;
   margin: 1em auto;
 }
-
-.feed-item p{
-  display: none;
-}
-
 .feed-item{
   overflow: auto;
+  border-bottom: 2px solid darkgray;
+  padding-bottom:40px;
 }
 
-.feed-item{
-  border-bottom: 2px solid darkgray;
+.feed-item h3{
+  font-size: 1em;
+}
+
+.feed-item:first-of-type h3{
+  margin-top: 0px;
+}
+
+.feed-img{
+  float: left;
+  width: 44%;
+  margin: auto;
+  border: 2px solid darkgray;
 }
 
 .feed-info{
@@ -266,16 +276,19 @@ nav ul li a{
   float: left;
 }
 
-.feed-item h2{
-  font-size: 20px;
-  margin: 0 auto;
+.feed-info h2{
+  font-size: 1.1em;
+  margin: 0 0 0 10%;
 }
 
-.feed-img{
-  float: left;
-  width: 45%;
-  margin: auto;
+.feed-info h2 a {
+  color: black;
 }
+
+.feed-item p{
+  display: none;
+}
+
 
 /*Detailed pages*/
 .author-title, .story-date{
