@@ -117,7 +117,6 @@ p{
 
 p span{
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 h1{
@@ -301,8 +300,22 @@ nav ul li a{
   width: 30%;
 }
 
+.author-title p, .story-date p{
+  font-size: .8em;
+}
+
+.author-title p{
+  width: 90%;
+  border-right: 2px solid black;
+}
+
 .article-by-line{
   clear: both;
+}
+
+.article-by-line p{
+  font-size: 1.09em;
+  line-height: 1.2em;
 }
 
 /* Footer */
