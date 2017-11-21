@@ -290,7 +290,12 @@ nav ul li a{
 }
 
 
-/*Detailed pages*/
+/*Detail pages*/
+
+.det-ha{
+  margin: 1em auto;
+}
+
 .author-title, .story-date{
   float: left;
   width: 30%;
