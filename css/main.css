@@ -174,7 +174,7 @@ nav {
 }
 
 nav ul{
-  margin-top: 0;
+  margin-top: 0 ;
   list-style: none;
   text-align: center;
   padding: 0;
@@ -188,7 +188,6 @@ nav ul li {
 nav ul li a{
   text-transform: uppercase;
   color: #222222;
-  font-weight: 900;
 }
 
 /* Main-Content */
@@ -418,29 +417,38 @@ footer{
 @media screen and (min-width: 768px){ /* Tablet Styles */
   /*Header*/
   .main-header{
-    width:94%;
+    overflow: scroll;
   }
 
   #logo {
     width: 40%;
+    margin: auto auto auto 2%;
     float:left;
   }
   nav {
-    width: 60%;
+    width: 58%;
     float:right;
   }
 
+  nav ul li{
+    float: left;
+    padding: 30px 0 30px 20px;
+    border:none;
+  }
   /*HERO AREA*/
   .top-story{
-    clear: both;
+    overflow: scroll;
+    padding: 5% 0;
   }
   .top-img{
     width: 57%;
     float: left;
+    border: 2px solid black;
   }
 
   .top-info {
     width: 37%;
+    padding-left: 5%;
     float: left;
   }
 
@@ -450,6 +458,7 @@ footer{
     clear: both;
     float: right;
     width: 37%;
+    border: none;
   }
 
   .sidebar-upcoming, .sidebar-faq{
@@ -548,68 +557,56 @@ footer{
   *,
   *:before,
   *:after {
-      background: transparent !important;
-      color: #000 !important; /* Black prints faster:
-                                 http://www.sanbeiji.com/archives/953 */
-      box-shadow: none !important;
-      text-shadow: none !important;
-    }
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                    http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-      text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-      content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-      content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-      content: "";
-    }
+  pre {
+    white-space: pre-wrap !important;
+  }
 
-    pre {
-      white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-      border: 1px solid #999;
-      page-break-inside: avoid;
-    }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
 
-    thead {
-      display: table-header-group;
-    }
-
-    tr,
-    img {
-      page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-      orphans: 3;
-      widows: 3;
-    }
-
-    h2,
-    h3 {
-      page-break-after: avoid;
-    }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 }
