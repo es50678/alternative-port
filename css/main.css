@@ -508,24 +508,24 @@ footer{
   }
 
   .det-info{
-    width: 50%;
+    width: 45%;
     float: right;
+    padding: 0;
   }
 
   .det-content{
     clear: both;
+    padding-top: 10px;
+  }
+
+  .author-title p{
+    width: 90%;
   }
 
   aside.detail{
     width: 100%;
   }
 
-  .detail .newsletter h2{
-    display:inline;
-  }
-  .detail .newsletter input{
-    display:inline;
-  }
 }
 
 @media screen and (min-width: 940px){
