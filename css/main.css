@@ -417,7 +417,7 @@ footer{
 @media screen and (min-width: 768px){ /* Tablet Styles */
   /*Header*/
   .main-header{
-    overflow: scroll;
+    overflow: hidden;
   }
 
   #logo {
@@ -432,12 +432,12 @@ footer{
 
   nav ul li{
     float: left;
-    padding: 30px 0 30px 20px;
+    padding: 30px 0 30px 15px;
     border:none;
   }
   /*HERO AREA*/
   .top-story{
-    overflow: scroll;
+    overflow: hidden;
     padding: 5% 0;
   }
   .top-img{
@@ -461,8 +461,9 @@ footer{
     border: none;
   }
 
-  .sidebar-upcoming, .sidebar-faq{
+  .newsletter, .sidebar-upcoming, .sidebar-faq{
     display: block;
+    border-bottom: 2px solid darkgray;
   }
 
   /*Feed*/
