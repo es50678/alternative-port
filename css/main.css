@@ -244,6 +244,7 @@ nav ul li a{
   width: 100%;
   margin: 1em auto;
 }
+
 .feed-item{
   overflow: auto;
   border-bottom: 2px solid darkgray;
@@ -481,6 +482,10 @@ footer{
     border-right:2px solid darkgray;
   }
 
+  .feed-item:last-child{
+    border-bottom:none;
+  }
+
   .feed-img{
     width: 30%;
   }
@@ -488,6 +493,8 @@ footer{
   /*Footer*/
   footer{
     margin-top: 20px;
+    padding-top:20px;
+    border-top:2px solid darkgray;
     clear: both;
   }
   #footer-logo{
