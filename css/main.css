@@ -542,30 +542,65 @@ footer{
     padding: 40px 15px;
   }
   /*Hero Area*/
+  .hero-area{
+    overflow: auto;
+    border-bottom:2px solid darkgray;
+  }
+
   .top-story{
-    width: 60%;
+    width: 63%;
     float: left;
+    border: none;
   }
+
   .top-img, .top-info{
-    width: 100%;
+    width: 98%;
+    padding: 0;
   }
+
+  .top-info h1{
+    font-size: 2em;
+  }
+
   /*Sidebar*/
   .sidebar{
     clear: none;
+    width: 35%;
+    margin-top: 3%;
+    border-left:2px solid darkgray;
+  }
+  .sidebar div{
+    padding: 5%;
+  }
+  .sidebar h2{
+    font-size:1.6em;
+  }
+
+  .sidebar-faq{
+    border: none;
   }
 
   /*feed*/
 
   .feed{
+    margin-top: 40px;
     clear: both;
     width: 100%;
     float: none;
+    border-right:none;
   }
 
   .feed-info{
     width: 65%;
+    float: right;
 
   }
+
+  .feed-info h2{
+    margin: auto;
+    font-size: 1.3em;
+  }
+
   .feed-info p {
     display: block;
   }
