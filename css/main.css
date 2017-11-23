@@ -156,6 +156,7 @@ img{
 
 /* Header */
 .main-header{
+  max-width: 940px;
   width: 100%;
   margin: auto;
   background-color: #dddddd;
@@ -192,7 +193,9 @@ nav ul li a{
 #main-content {
   overflow: auto;
   width: 94%;
+  margin: auto;
   padding: 0 3%;
+  max-width: 940px;
 }
 /* Home and Reviews Page*/
 .hero-area{
@@ -530,6 +533,14 @@ footer{
 
 @media screen and (min-width: 940px){
   /* DESKTOP STYLES HERE */
+  /*HEADER*/
+  nav ul{
+    float: right;
+    margin: 0;
+  }
+  nav ul li{
+    padding: 40px 15px;
+  }
   /*Hero Area*/
   .top-story{
     width: 60%;
