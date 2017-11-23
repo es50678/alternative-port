@@ -606,8 +606,25 @@ footer{
   }
 
   /*Detail Pages*/
+
+  .det-ha{
+    border: none;
+  }
+
+  .det-story{
+    border-right: 1px solid darkgray;
+    width: 60.5%;
+    padding-right: 3%;
+  }
+
+  .det-info{
+    float: left;
+  }
+
   aside.detail{
-    width: 37%;
+    width: 36%;
+    float: left;
+    border: none;
   }
 }
 
