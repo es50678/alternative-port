@@ -140,7 +140,7 @@ h3{
   text-transform: uppercase;
   line-height:1.6em;
   text-align: center;
-  box-shadow: 3px 3px 0px 2px #dadada;
+  box-shadow: 1px 1px 0px 2px #dadada;
   width: 100%;
   height: 45px;
   margin-bottom:15px;
@@ -190,6 +190,7 @@ nav ul li a{
 /* Main-Content */
 
 #main-content {
+  overflow: auto;
   width: 94%;
   padding: 0 3%;
 }
@@ -228,7 +229,7 @@ nav ul li a{
   font-size: 1.2em;
 }
 
-.sidebar input:first-of-type{
+.sidebar input:nth-child(1){
   color: black;
   background-color: white;
   box-shadow: inset 0 0 0px 3px #dadada;
@@ -456,13 +457,19 @@ footer{
   .sidebar{
     clear: both;
     float: right;
-    width: 37%;
+    width: 39.7%;
     border: none;
   }
 
   .newsletter, .sidebar-upcoming, .sidebar-faq{
+    width: 90%;
+    padding-left: 3%;
     display: block;
     border-bottom: 2px solid darkgray;
+  }
+
+  .sidebar input:nth-child(3), input:nth-child(4){
+    background-color: #b21e49;
   }
 
   /*Feed*/
@@ -470,6 +477,8 @@ footer{
   .feed {
     width: 60%;
     float: left;
+    margin: auto;
+    border-right:2px solid darkgray;
   }
 
   .feed-img{
@@ -478,6 +487,7 @@ footer{
 
   /*Footer*/
   footer{
+    margin-top: 20px;
     clear: both;
   }
   #footer-logo{
