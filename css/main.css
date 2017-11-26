@@ -317,6 +317,70 @@ nav ul li a{
   line-height: 1.2em;
 }
 
+/*ABOUT PAGE ============*/
+
+.mission{
+
+}
+
+.mission h1{
+  font-size: 1.35em;
+}
+
+.mission p{
+  font-size: .9em;
+}
+
+.team{
+
+}
+
+.team h1{
+  font-size: 1.35em;
+}
+
+.team-member{
+  margin: 30px auto;
+}
+
+.team-img{
+  width: 40%;
+  padding-bottom: 40%;
+  float: left;
+  margin-right: 30px;
+  border: 1px solid #ccc;
+}
+
+#team-img-jack{
+  background: #333 url("../img/jack-smith.jpg") no-repeat center ;
+  background-size: cover;
+}
+
+#team-img-lana{
+  background: #333 url("../img/lana-walker.jpg") no-repeat center ;
+  background-size: cover;
+}
+
+#team-img-willow{
+  background: #333 url("../img/willow-white.jpg") no-repeat center ;
+  background-size: cover;
+}
+
+.team-name{
+  font-size: 1em;
+  margin-bottom:0;
+}
+
+.team-title{
+  font-size: .9em;
+  margin: 0;
+}
+
+.team-description{
+  display: none;
+}
+
+
 /* Footer */
 footer{
   width: 100%;
@@ -529,6 +593,30 @@ footer{
     width: 100%;
   }
 
+  /*ABOUT PAGE ========*/
+
+  .mission{
+    border-bottom: 1px solid darkgray;
+    padding: 25px 0;
+  }
+
+  .mission h1{
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .mission p{
+    margin: 20px 0;
+    line-height: 24px;
+  }
+
+  .team-img{
+    width: 20%;
+    padding-bottom: 20%;
+    margin-right: 10%;
+  }
+
+
 }
 
 @media screen and (min-width: 940px){
@@ -626,6 +714,37 @@ footer{
     float: left;
     border: none;
   }
+
+  /*ABOUT PAGE ======*/
+  .mission h1{
+    font-size: 1.9em;
+  }
+
+  .mission p{
+    font-size: 1em;
+  }
+
+  .team h1{
+    font-size: 1.9em;
+  }
+
+  .team-img{
+    margin-right: 30px;
+  }
+  .team-name{
+    font-size: 1.35em;
+    margin: 0;
+  }
+
+  .team-title{
+    font-size: 1em;
+  }
+
+  .team-description{
+    display: block;
+    margin: 20px 0;
+  }
+
 }
 
 @media print,
