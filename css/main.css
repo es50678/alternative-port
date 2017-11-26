@@ -550,7 +550,7 @@ footer{
     border-bottom: 2px solid darkgray;
   }
 
-  .sidebar input:nth-child(3), input:nth-child(4){
+  .sidebar button:nth-child(3), button:nth-child(4){
     background-color: #b21e49;
   }
 
