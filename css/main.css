@@ -318,11 +318,18 @@ nav ul li a{
 }
 
 /*ABOUT PAGE ============*/
+.contact-info p:last-child{
+  margin-left:70px;
+  margin-top: 0;
+}
 .map-cont{
+  margin-top: 1em;
+  margin-bottom:2em;
   position: relative;
   padding-bottom: 75%;
   height: 0;
   overflow: hidden;
+  border: 1px solid black;
 }
 
 .map-cont iframe{
@@ -333,20 +340,13 @@ nav ul li a{
   height: 100%;
 }
 
-.mission{
-
-}
-
-.mission h1{
+.mission h1, .contact-info h1{
   font-size: 1.35em;
 }
 
-.mission p{
+.mission p, .contact-info p{
   font-size: .9em;
-}
-
-.team{
-
+  margin-bottom: 0;
 }
 
 .team h1{
@@ -608,13 +608,28 @@ footer{
   }
 
   /*ABOUT PAGE ========*/
+  .contact-info{
+    float: left;
+    width: 40%;
+  }
+  .contact-info p{
+    font-size: 1em;
+  }
+
+  .map-cont, .contact-info{
+    margin-top:40px;
+  }
+  .map-cont{
+    padding-bottom: 50%;
+  }
 
   .mission{
+    border-top: 1px solid darkgray;
     border-bottom: 1px solid darkgray;
     padding: 25px 0;
   }
 
-  .mission h1{
+  .mission h1, .contact-info h1{
     font-size: 1.5em;
     margin: 0;
   }
@@ -730,6 +745,9 @@ footer{
   }
 
   /*ABOUT PAGE ======*/
+  .contact-info p{
+    font-size: 1.4em;
+  }
   .mission h1{
     font-size: 1.9em;
   }
@@ -738,15 +756,15 @@ footer{
     font-size: 1em;
   }
 
-  .team h1{
-    font-size: 1.9em;
+  .team h1, .contact-info h1{
+    font-size: 1.95em;
   }
 
   .team-img{
     margin-right: 30px;
   }
   .team-name{
-    font-size: 1.35em;
+    font-size: 1.4em;
     margin: 0;
   }
 
