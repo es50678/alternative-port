@@ -777,6 +777,24 @@ footer{
     margin: 20px 0;
   }
 
+  /*CONCERTS PAGE==========*/
+  .concert-side-bar{
+    width: 34%;
+  }
+
+  .concert-feed{
+    overflow: hidden;
+    width: 65%;
+    margin-top: 3%;
+  }
+
+  .concert-item{
+    width: 45%;
+    margin: 0 2%;
+    float: left;
+    border-bottom: 1px solid darkgray;
+  }
+
 }
 
 @media print,
