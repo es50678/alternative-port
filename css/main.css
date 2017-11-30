@@ -779,7 +779,15 @@ footer{
 
   /*CONCERTS PAGE==========*/
   .concert-side-bar{
+    margin-top: 60px;
     width: 34%;
+  }
+  .concert-side-bar .newsletter{
+    padding-top: 0;
+
+  }
+  .concert-side-bar .newsletter h2{
+    margin-top: 0;
   }
 
   .concert-feed{
@@ -796,10 +804,19 @@ footer{
   }
   .concert-date{
     float: left;
+    width: 25%;
+  }
+
+  .concert-date h2{
+    border:1px solid darkgray;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
   }
 
   .concert-info{
     float: right;
+    width: 70%;
   }
 
   .concert-info .btn{
