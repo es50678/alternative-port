@@ -794,6 +794,17 @@ footer{
     float: left;
     border-bottom: 1px solid darkgray;
   }
+  .concert-date{
+    float: left;
+  }
+
+  .concert-info{
+    float: right;
+  }
+
+  .concert-info .btn{
+    background-color: #b21e49;
+  }
 
 }
 
