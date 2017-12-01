@@ -778,40 +778,43 @@ footer{
   }
 
   /*CONCERTS PAGE==========*/
-  .concert-side-bar{
-    margin-top: 60px;
-    width: 34%;
-  }
-  .concert-side-bar .newsletter{
-    padding-top: 0;
 
-  }
-  .concert-side-bar .newsletter h2{
-    margin-top: 0;
+  .concert-content *{
+    box-sizing: border-box;
   }
 
   .concert-feed{
     overflow: hidden;
-    width: 65%;
+    width: 70%;
     margin-top: 3%;
+    border-right:1px solid #cfcacb;
   }
 
   .concert-item{
     width: 45%;
-    margin: 0 2%;
+    margin: 27px 2% 0 2%;
     float: left;
-    border-bottom: 1px solid darkgray;
+    border-bottom: 1px solid #cfcacb;
   }
   .concert-date{
     float: left;
     width: 25%;
+    padding-bottom: 25%;
+    border:2px solid #cfcacb;
+    position: relative;
+    height: 0;
+    overflow: hidden;
   }
 
   .concert-date h2{
-    border:1px solid darkgray;
     text-align: center;
     font-size: 1.5em;
     margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .concert-info{
@@ -819,9 +822,36 @@ footer{
     width: 70%;
   }
 
+  .concert-info h3{
+    font-size:1.2em;
+    margin: 0;
+    line-height: 1.5rem;
+  }
+
+  .concert-info p{
+    margin-top: 0;
+  }
+
   .concert-info .btn{
     background-color: #b21e49;
   }
+
+  .concert-side-bar{
+    border-left: none;
+    margin-top: 60px;
+    width: 30%;
+    border-bottom: 1px solid #cfcacb;
+  }
+  .concert-side-bar .newsletter{
+    margin: auto;
+    padding: 0;
+    border-bottom: none;
+
+  }
+  .concert-side-bar .newsletter h2{
+    margin-top: 0;
+  }
+
 
 }
 
