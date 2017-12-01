@@ -435,8 +435,8 @@ nav ul li a{
 .concert-info{
   float: right;
   width: 70%;
-  margin-right: 5%;
-  padding-right:5%;
+  margin-right: 2.25%;
+  padding-right:2.5%;
 }
 
 .concert-info h3{
@@ -707,6 +707,12 @@ footer{
     margin-right: 10%;
   }
 
+  /*CONCERTS PAGE=========*/
+
+  .concert-item{
+    width: 45%;
+    float: left;
+  }
 
 }
 
@@ -847,10 +853,6 @@ footer{
     border-right:1px solid #cfcacb;
   }
 
-  .concert-item{
-    width: 45%;
-    float: left;
-  }
   .concert-date{
     width: 25%;
     padding-bottom: 25%;
