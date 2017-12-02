@@ -457,6 +457,28 @@ nav ul li a{
   display: none;
 }
 
+/*FAQ PAGE========*/
+
+.faq-feed{
+  margin: 2em auto;
+}
+
+.faq-feed h1{
+  font-size: 1.5em;
+}
+
+.question-item{
+  border-bottom: 1px solid darkgray;
+}
+
+.question-header h2{
+  font-size: 1.25em;
+}
+
+.question-body p, .question-footer p{
+  font-size: .9em;
+}
+
 /* Footer */
 footer{
   width: 100%;
