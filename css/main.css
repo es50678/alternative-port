@@ -98,6 +98,17 @@ textarea {
    ========================================================================== */
 
 /*Global*/
+html{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 body, html{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
@@ -395,10 +406,6 @@ nav ul li a{
 }
 
 /*CONCERTS PAGE*/
-
-.concert-content *{
-  box-sizing: border-box;
-}
 
 .concert-feed{
   overflow: hidden;
